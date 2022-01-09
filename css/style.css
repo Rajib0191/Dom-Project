@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+p{
+  margin: 0;
+}
+body {
+  background-color: #f4f8fa;
+}
+/*==========Headline===========*/
+.headline{
+  display: flex;
+  justify-content: space-between;
+}
+.headline button{
+  height: 70px;
+  width: 50%;
+}
+.lesson-list,
+.question{
+  font-size: 16px;
+  font-weight: 500;
+  background: #f1f6f8;
+  border: 1px solid #e0e9ec;
+}
+.fa-book-open,
+.fa-question-circle{
+  font-size: 20px;
+  color: #35bb78;
+}
+.active{
+  background: #FFFFFF !important;
+  border: none;
+}
+/*===============Subject Content===================*/
+.books{
+  width: 100%;
+  margin-bottom: 5px;
+}
+.subjects{
+  background: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  height: 55px;
+  padding: 0px 5px;
+  cursor: pointer;
+}
+.subject,
+.subject-icon{
+  display: flex;
+  align-items: center;
+}
+.subject{
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+.subject-icon{
+  font-size: 20px;
+  padding-right: 20px;
+}
+/*================Lesson Content=======================*/
+.lessons-container{
+  max-height: 0px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.8s;
+  -moz-transition: max-height 0.8s;
+  transition: max-height 0.8s;
+}
+.lesson-row{
+  position: relative;
+  display: flex;
+  padding: 10px 5px;
+  background: #FFFFFF;
+  border-top: 1px solid #e0e9ec;
+  cursor: pointer;
+}
+.fa-youtube{
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.lessons-container-show{
+  max-height: 400px;
+}
+.class-duration{
+  position: absolute;
+  right: 50px;
+}
+.uncomplete{
+  position: absolute;
+  right: 10px;
+}
+/*============Right Section===================*/
+.right_top_container{
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #35bb78;
+  padding-right: 20px;
+}
+.container_details{
+  color: #FFFFFF;
+  font-weight: 500;
+}
+.complete_box{
+  border: 1px solid #FFFFFF;
+  padding: 10px 10px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+.player_container{
+  margin: 50px 40px;
+}
+.player-content{
+  max-width: 100%;
+  height: auto;
+}
+.right_section_bottom{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 40px;
+}
+.right_section_bottom a{
+  color: #35bb78;
+}
